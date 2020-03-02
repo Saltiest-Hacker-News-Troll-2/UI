@@ -196,24 +196,24 @@ a {
 .mainBody {
   height: 800px;
   border: 2px solid black;
-  margin: 2% 0;
+  margin: 0% 0;
   background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-top: 1%;
 }
-.mainBody .post1 {
-  height: 25%;
+.mainBody .post {
+  height: 28%;
   background-color: blue;
-  margin: 4% 2%;
+  margin: 1% 2%;
 }
-.mainBody .post2 {
-  height: 25%;
-  background-color: yellow;
-  margin: 4% 2%;
+.mainBody .post .userName {
+  margin: 2%;
 }
-.mainBody .post3 {
-  height: 25%;
-  background-color: green;
-  margin: 4% 2%;
+.mainBody .post .userPost {
+  margin: 1%;
+}
+.mainBody .post .saltLevel {
+  margin: 5% 1% 0;
 }
