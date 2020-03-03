@@ -190,14 +190,17 @@ a {
 .filterBar {
   width: auto;
   height: 40px;
-  background-color: gray;
-  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 .mainBody {
   height: 800px;
   border: 2px solid black;
   margin: 0% 0;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -205,8 +208,8 @@ a {
 }
 .mainBody .post {
   height: 28%;
-  background-color: blue;
   margin: 1% 2%;
+  border: 2px solid black;
 }
 .mainBody .post .userName {
   margin: 2%;
