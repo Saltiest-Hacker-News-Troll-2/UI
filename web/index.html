@@ -2,30 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrollFindr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrollFindr</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class='container header'>
-        <h1>TrollFindr</h1>
-        <nav>
-            <a href='#'>Contact</a>
-            <a href='#'>About</a>
-        </nav>
-        Sign Up
-    </section>
-    <section class='container filterBar'>
-        Filter
-        Sentiment
-        Sort
-        Newest
-    </section>
+  <iframe src="_header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  <section class="hero infoblock">
+    <h2>
+      Identify / Spot / Discover the Trolls using Machine Learning.
+    </h2>
+    <p>
+      Troll Findr uses Natural Language Processing (NLP) to determine post sentiment and trolling likelyhood.
+    </p>
+    <div class="cta">
+      <a href="https://google.com" class="cta">
+        <button class="cta-btn" type="button">See in Action</button>
+      </a>
+      <a href="https://google.com" class="cta">
+        <button class="cta-btn" type="button">Sign Up</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="infoblock">
+    <p>
+      Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities, Hacker
+      News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine if a
+      user is honest or a trolling.
+    </p>
+    <p>
+      Our ML model uses historical data going back 3 years.
+    </p>
+  </section>
+
+
+  <iframe src="_footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
 </body>
 
 </html>
