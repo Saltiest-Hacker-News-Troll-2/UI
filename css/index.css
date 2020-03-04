@@ -129,34 +129,32 @@ table {
 * {
   box-sizing: border-box;
 }
-/*
 html {
   font-size: 62.5%;
 }
-
-html, body {
+html,
+body {
   font-family: 'Ubuntu', sans-serif;
-  //color: @main-font-color;
+  color: black;
 }
-
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Russo One', sans-serif;
-  //color: @header-font-color;
+  color: black;
 }
-
 h2 {
   font-size: 3.2rem;
 }
-
 h3 {
   font-size: 2.8rem;
 }
-
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-*/
 .container {
   max-width: 800px;
   width: 100%;
@@ -166,25 +164,34 @@ a {
   text-decoration: none;
 }
 .header {
-  background-color: orange;
-  height: 100px;
-  max-width: 1500px;
+  background-color: #FA7921;
+  height: 60px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 2rem;
+  color: black;
+}
+.header h1 {
+  font-size: 50px;
 }
 .header nav {
   width: 30%;
   display: flex;
   justify-content: space-around;
 }
+.header nav a {
+  font-size: 2rem;
+  color: black;
+}
 .searchBar {
   width: auto;
   height: 40px;
   margin: 2% 2%;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 6px;
 }
 .filterBar {
@@ -193,13 +200,21 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.filterBar .filter {
+  padding-left: 2%;
+  font-size: 2rem;
+}
+.filterBar .sort {
+  padding-right: 2%;
+  font-size: 2rem;
 }
 .mainBody {
   height: 800px;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 0% 0;
   display: flex;
   flex-direction: column;
@@ -209,14 +224,46 @@ a {
 .mainBody .post {
   height: 28%;
   margin: 1% 2%;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .mainBody .post .userName {
   margin: 2%;
+  font-size: 2rem;
 }
 .mainBody .post .userPost {
-  margin: 1%;
+  margin: 1% 2%;
+  font-size: 1.5rem;
 }
 .mainBody .post .saltLevel {
-  margin: 5% 1% 0;
+  margin: 5% 2% 0;
+  font-size: 1.5rem;
+}
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+  font-size: 1.5rem;
+}
+.firstRow img {
+  max-width: 150px;
+}
+.firstRow div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.secondRow img {
+  max-width: 150px;
+}
+.secondRow div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
