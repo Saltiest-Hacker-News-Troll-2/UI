@@ -3,78 +3,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrollFindr</title>
 
-    <title>Troll Finder!</title>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class='header'>
-        <a href='index.html'><h1>TrollFindr</h1></a>
+  <iframe src="_header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  <section class="hero infoblock">
+    <h2>
+      Identify / Spot / Discover the Trolls using Machine Learning.
+    </h2>
+    <p>
+      Troll Findr uses Natural Language Processing (NLP) to determine post sentiment and trolling likelyhood.
+    </p>
+    <div class="cta">
+      <a href="https://google.com" class="cta">
+        <button class="cta-btn" type="button">See in Action</button>
+      </a>
+      <a href="https://google.com" class="cta">
+        <button class="cta-btn" type="button">Sign Up</button>
+      </a>
+    </div>
+  </section>
 
-        <nav>
-            <a href='#'>About</a>
-            <a href='team.html'>Team</a>
-        </nav>
-        <a href='#'>Sign Up</a>
+  <section class="infoblock">
+    <p>
+      Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities, Hacker
+      News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine if a
+      user is honest or a trolling.
+    </p>
+    <p>
+      Our ML model uses historical data going back 3 years.
+    </p>
+  </section>
 
-    </section>
-    <section class='container'>
-        <section class='container searchBar'>search bar placeholder</section>
-        <section class='container filterBar'>
-            <section class='filter'>
-                Filter:
-                Sentiment
-            </section>
-            <section class='sort'>
-                Sort:
-                Newest
-            </section>
+  <section class='container'>
+    <section class='container searchBar'>search bar placeholder</section>
+    <section class='container filterBar'>
+        <section class='filter'>
+            Filter:
+            Sentiment
         </section>
-        <section class='mainBody'>
-            <section class='post'>
-                <section class='userName'>User1</section>
-                <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</section>
-                <section class='saltLevel'>Salt Level: </section>
-            </section>
-            <section class='post'>
-                <section class='userName'>User2</section>
-                <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</section>
-                <section class='saltLevel'>Salt Level: </section>
-            </section>
-            <section class='post'>
-                <section class='userName'>User3</section>
-                <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</section>
-                <section class='saltLevel'>Salt Level: </section>
-            </section>
+        <section class='sort'>
+            Sort:
+            Newest
         </section>
     </section>
+    <section class='mainBody'>
+        <section class='post'>
+            <section class='userName'>User1</section>
+            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</section>
+            <section class='saltLevel'>Salt Level: </section>
+        </section>
+        <section class='post'>
+            <section class='userName'>User2</section>
+            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</section>
+            <section class='saltLevel'>Salt Level: </section>
+        </section>
+        <section class='post'>
+            <section class='userName'>User3</section>
+            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum.</section>
+            <section class='saltLevel'>Salt Level: </section>
+        </section>
+    </section>
+</section>
+
+
+
+  <iframe src="_footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
+
+</html>
+
