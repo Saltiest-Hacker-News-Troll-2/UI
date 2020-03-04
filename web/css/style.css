@@ -475,6 +475,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -511,6 +512,42 @@ p {
 a {
   text-decoration: none;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  border: 1px red solid;
+}
+.header .logo a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.header .logo a img {
+  border: 1px blue solid;
+}
+.header .logo a span {
+  font-family: 'Nunito';
+  font-weight: bolder;
+  font-size: 4rem;
+  border: 1px green solid;
+}
+.header nav {
+  width: 50%;
+  border: 1px black solid;
+  display: flex;
+  justify-content: space-around;
+}
+.header nav a {
+  border: 1px black solid;
+  font-size: 2rem;
+}
 footer .top {
   display: flex;
   flex-direction: row;
@@ -528,29 +565,34 @@ footer nav a {
   font-size: 1.4rem;
   padding: 5px 0;
 }
-.header {
-  background-color: #FA7921;
-  height: 60px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+.firstRow {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 2rem;
-  color: black;
+  margin: 5% auto;
+  font-size: 1.5rem;
 }
-.header h1 {
-  font-size: 50px;
+.firstRow img {
+  max-width: 150px;
 }
-.header nav {
-  width: 30%;
+.firstRow div {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
-.header nav a {
-  font-size: 2rem;
-  color: black;
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.secondRow img {
+  max-width: 150px;
+}
+.secondRow div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
 .searchBar {
   width: auto;
@@ -602,33 +644,4 @@ footer nav a {
 .mainBody .post .saltLevel {
   margin: 5% 2% 0;
   font-size: 1.5rem;
-}
-.firstRow {
-  display: flex;
-  justify-content: space-between;
-  margin: 5% auto;
-  font-size: 1.5rem;
-}
-.firstRow img {
-  max-width: 150px;
-}
-.firstRow div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-}
-.secondRow {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5rem;
-}
-.secondRow img {
-  max-width: 150px;
-}
-.secondRow div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
 }
