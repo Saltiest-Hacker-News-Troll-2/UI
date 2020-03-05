@@ -654,6 +654,20 @@ footer .copyright {
 .landing-block-1 .hero {
   margin: 0 0 0 48px;
 }
+.about {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  display: flex;
+}
+.about img {
+  margin: 3% 0;
+  height: 500px;
+  width: 80%;
+}
+.about p {
+  margin: 5% 10% 0;
+}
 .team h1 {
   font-size: 3.5rem;
   margin-left: 8.5%;

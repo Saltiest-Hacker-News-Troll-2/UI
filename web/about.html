@@ -19,14 +19,19 @@
 </head>
 
 <body>
-  <iframe src="_header.html"
-    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
-  </iframe>
-    <section class ='container'>
-      <p>Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities, Hacker
-      News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine
-      if a user is honest or a trolling.</p></section>
-    <iframe src="_footer.html"
+    <iframe src="_header.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+    </iframe>
+    <section class='container about'>
+      <h1>What does this project do?</h1>
+
+
+      <p>Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities,
+        Hacker
+        News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine
+        if a user is honest or a trolling.</p>    <img src='img/workflow.jpg'>
+  </section>
+  <iframe src="_footer.html"
     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
 
