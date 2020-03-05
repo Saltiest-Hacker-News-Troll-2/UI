@@ -501,6 +501,10 @@ h5 {
   font-family: "Verdana", "Open Sans", sans-serif;
   color: #333333;
 }
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -521,6 +525,7 @@ a {
 }
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #FA7921;
@@ -529,6 +534,7 @@ a {
 }
 .header .logo {
   display: flex;
+  flex-direction: row;
   justify-content: left;
   align-items: center;
   width: 50%;
@@ -536,6 +542,7 @@ a {
 }
 .header .logo a {
   display: flex;
+  flex-direction: row;
   justify-content: left;
   align-items: center;
 }
@@ -553,13 +560,15 @@ a {
 }
 .header nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  width: 50%;
+  width: 40%;
 }
 .header nav a {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 80px;
@@ -570,23 +579,61 @@ a {
 }
 .header nav a:hover {
   color: #5BC0EB;
+  background-color: #ed6305;
 }
-footer .top {
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: #F2F2F2;
+  margin-top: 24px;
+  padding: 24px 32px;
+  border: 1px solid red;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid yellow;
+}
+footer .links nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 16px;
+  border: 1px solid blue;
+}
+footer .links nav a {
+  font-size: 1.4rem;
+  padding: 5px 0;
+  border: 1px solid orange;
+}
+footer .links nav a:hover {
+  text-decoration: underline;
+}
+footer .links .social {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  border: 1px solid green;
+}
+footer .links .social img {
+  width: 24px;
+  margin-left: 8px;
 }
 footer .copyright {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-}
-footer nav {
-  display: flex;
-  flex-direction: column;
-}
-footer nav a {
-  font-size: 1.4rem;
-  padding: 5px 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
 }
 .firstRow {
   display: flex;
