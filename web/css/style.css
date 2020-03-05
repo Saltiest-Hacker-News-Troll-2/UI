@@ -27,6 +27,13 @@
   src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Russo One';
   font-style: normal;
   font-weight: 400;
@@ -516,13 +523,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FA7921;
+  box-shadow: 0px 4px 4px #E6E6E6;
+  margin-bottom: 24px;
 }
 .header .logo {
   display: flex;
   justify-content: left;
   align-items: center;
   width: 50%;
-  border: 1px red solid;
+  padding: 0 8px;
 }
 .header .logo a {
   display: flex;
@@ -530,23 +540,36 @@ a {
   align-items: center;
 }
 .header .logo a img {
-  border: 1px blue solid;
+  height: 80px;
 }
-.header .logo a span {
+.header .logo a div {
+  height: 80px;
   font-family: 'Nunito';
   font-weight: bolder;
   font-size: 4rem;
-  border: 1px green solid;
+  text-shadow: 2px 2px 2px #333333;
+  color: #FA7921;
+  display: none;
 }
 .header nav {
-  width: 50%;
-  border: 1px black solid;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 50%;
 }
 .header nav a {
-  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 20%;
   font-size: 2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.header nav a:hover {
+  color: #5BC0EB;
 }
 footer .top {
   display: flex;
