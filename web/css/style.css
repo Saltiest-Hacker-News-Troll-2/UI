@@ -654,6 +654,10 @@ footer .copyright {
 .landing-block-1 .hero {
   margin: 0 0 0 48px;
 }
+.team h1 {
+  font-size: 3.5rem;
+  margin-left: 3%;
+}
 .firstRow {
   display: flex;
   justify-content: space-between;
