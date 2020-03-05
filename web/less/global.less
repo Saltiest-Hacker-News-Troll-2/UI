@@ -2,6 +2,8 @@
 // General Styles
 * {
   box-sizing: border-box;
+  // width: 100%;
+  max-width: 100%;
 }
 html {
   font-size: 62.5%;
@@ -9,14 +11,15 @@ html {
 
 html, body {
   // set from variable
-  font-family: 'Ubuntu', sans-serif;
-  color: black;
+  font-family: @main-font-family;
+  color: @main-text-color;
+  background-color: @main-bg-color;
 }
 
 h1, h2, h3, h4, h5 {
   // set from variable
-  font-family: 'Russo One', sans-serif;
-  color: black;
+  font-family: @heading-font-family;
+  color: @black80;
 }
 
 h2 {
@@ -36,6 +39,6 @@ p {
   width: 100%;
   margin: 0 auto;  
 }
-a{
+a {
   text-decoration: none;
 }

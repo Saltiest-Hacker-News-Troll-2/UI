@@ -18,8 +18,8 @@
 
 
 // Color Assignments 
-@text-color: @black90;
-@main-bg:  @white;
+@main-text-color: @black90;
+@main-bg-color:  @white;
 
 @btn-bg-color: @ecstasy;
 @btn-bg-color-hover: @gorse;
@@ -36,9 +36,25 @@
 // Set up typefaces
 // Montserrat, Muli, Open Sans
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli|Open+Sans&display=swap');
+@montserrat: "Montserrat";        // sans-serif
+@muli: "Muli";                    // sans-serif
+@opensans: "Open Sans";           // sans-serif
+@verdana: "Verdana";              // sans-serif
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Ubuntu|Roboto|Russo+One&display=swap');
 //@import url('https://fonts.googleapis.com/css?family=Bangers|Titillium+Web');
+// other imports
+@ubuntu: "Ubuntu";                // sans-serif
+@russo: 'Russo One';              // sans-serif
+@nunito: 'Nunito';                // sans-serif
+@roboto: "Roboto";                // sans-serif
 
+@main-font-family: @verdana, @opensans, sans-serif;
+@heading-font-family: @verdana, @opensans, sans-serif;
+@helper-font-family: @nunito, @muli, @montserrat, sans-serif;
 
+@extra1-font-family: @nunito, @muli, @montserrat, sans-serif;
+@extra2-font-family: @nunito, @muli, @montserrat, sans-serif;
 
 
 // Variable Font options
@@ -48,9 +64,14 @@
 // Set up named font types
 
 
+// DIMENSIONS
 
-
+@header-height: 80px;
+@logo-left-padding: 8px;
+@header-bottom-margin:24px;
 
 
 // Breakpoints
 @mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 1000px)";
+// @desktop: ~"(max-width: 8000px)";
