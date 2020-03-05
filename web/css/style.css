@@ -502,7 +502,7 @@ h5 {
   color: #333333;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-weight: 600;
 }
 h2 {
@@ -515,13 +515,12 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 a {
   text-decoration: none;
+}
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
 }
 .header {
   display: flex;
@@ -633,6 +632,27 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   border: 1px solid blue;
+}
+.landing-block-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid purple;
+}
+.landing-block-1 * {
+  border: 1px solid green;
+}
+.landing-block-1 .block-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid purple;
+}
+.landing-block-1 .hero {
+  margin: 0 0 0 48px;
 }
 .firstRow {
   display: flex;
