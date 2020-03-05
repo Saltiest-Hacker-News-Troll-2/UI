@@ -1,20 +1,34 @@
 // MIXINS IN HERE
 
 // 1. Simple Functions
-.set-colors(@text-color, @bg-color) {
+.set-colors(@text-color; @bg-color) {
   color: @text-color;
   background-color: @bg-color;
 }
 
-.set-size(@width, @height) {
+.set-size(@width; @height) {
   width: @width;
   height: @height;
 }
 
-.set-flex(@justify-content, @align-items) {
+.flex-row(@justify-cont; @align-itms) {
   display: flex;
-  justify-content: @justify-content;
-  align-items: @align-items;
+  flex-direction: row;
+  justify-content: @justify-cont;
+  align-items: @align-itms;
+}
+.flex-col(@justify-cont; @align-itms) {
+  display: flex;
+  flex-direction: column;
+  justify-content: @justify-cont;
+  align-items: @align-itms;
+}
+
+
+
+// debugging functions
+.border(@color:black) {
+  border: 1px solid @color;
 }
 
 // 2. Complex Functions

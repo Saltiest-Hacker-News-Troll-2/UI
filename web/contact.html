@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+
   <title>Contact</title>
+
 </head>
+
 <body>
   <iframe src="_header.html"
     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
-    <iframe src="_footer.html"
+  <div class="container">
+    <section class="title">
+      <h1>Contact Us</h1>
+    </section>
+  
+    <section class="contact">
+  
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <!-- <p>
+          <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select></label>
+        </p> -->
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+
+        <p>
+          <label>File: <input type="file" name="file" /></label>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>    
+  
+    </section>
+
+    <section class="list-join">
+
+      <form name="list-join" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Join</button>
+        </p>
+      
+
+    </section>
+  
+
+
+
+  </div>
+
+  <iframe src="_footer.html"
     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
+
 </html>
