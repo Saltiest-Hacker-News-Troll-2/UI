@@ -588,6 +588,10 @@ footer nav a {
   font-size: 1.4rem;
   padding: 5px 0;
 }
+.team h1 {
+  font-size: 3.5rem;
+  margin-left: 3%;
+}
 .firstRow {
   display: flex;
   justify-content: space-between;
