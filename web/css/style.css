@@ -656,12 +656,16 @@ footer .copyright {
 }
 .team h1 {
   font-size: 3.5rem;
-  margin-left: 10%;
+  margin-left: 8.5%;
+  margin-top: 2%;
+  margin-bottom: 2.5%;
 }
 .firstRow {
   display: flex;
   justify-content: space-between;
-  margin: 5% auto;
+  margin: 0 auto 5%;
+  padding-top: 2.5%;
+  border-top: 2px solid black;
   font-size: 1.5rem;
 }
 .firstRow img {
