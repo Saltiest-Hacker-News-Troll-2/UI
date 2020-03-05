@@ -680,6 +680,8 @@ footer .copyright {
 .secondRow {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2.5%;
+  border-bottom: 2px solid black;
   font-size: 1.5rem;
 }
 .secondRow img {
