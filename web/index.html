@@ -1,103 +1,115 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TrollFindr</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+
+  <title>TrollFindr</title>
+
 </head>
 
 <body>
-  <iframe src="_header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-  <section class="hero infoblock">
-    <h2>
-      Identify / Spot / Discover the Trolls using Machine Learning.
-    </h2>
-    <p>
-      Troll Findr uses Natural Language Processing (NLP) to determine post sentiment and trolling likelyhood.
-    </p>
-    <div class="cta">
-      <a href="https://google.com" class="cta">
-        <button class="cta-btn" type="button">See in Action</button>
-      </a>
-      <a href="https://google.com" class="cta">
-        <button class="cta-btn" type="button">Sign Up</button>
-      </a>
-    </div>
-  </section>
+  <!-- header component -->
+  <iframe src="_header.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+  </iframe>
+  <!-- header component end -->
 
-  <section class="infoblock">
-    <p>
-      Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities, Hacker
-      News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine if a
-      user is honest or a trolling.
-    </p>
-    <p>
-      Our ML model uses historical data going back 3 years.
-    </p>
-  </section>
+  <div class="container home">
 
-  <section class='container'>
-    <section class='container searchBar'>search bar placeholder</section>
-    <section class='container filterBar'>
-        <section class='filter'>
-            Filter:
-            Sentiment
-        </section>
-        <section class='sort'>
-            Sort:
-            Newest
-        </section>
+    <section class="block-one">
+      <div class="block-column">
+        <p>
+          <h1>
+            <!-- Identify / Spot / Discover the Trolls using Machine Learning. -->
+            Discover the Trolls using Machine Learning.
+          </h1>
+          <h3>
+            Troll Findr uses Natural Language Processing (NLP) to determine post sentiment and trolling likelyhood
+          </h3>
+        </p>
+        <div class="cta">
+          <!-- <a href="https://google.com" class="cta-alt">
+            <button class="cta-btn" type="button">Browse</button>
+          </a> -->
+          <a href="https://front-end-2-pied.now.sh/" class="cta-prime">
+            <button class="cta-btn" type="button">Sign Up</button>
+          </a>
+        </div>
+      </div>
+      <div class="hero">
+        <img src="img/hacker_news_screen.png" alt="hacker news homepage screenshot">
+      </div>
     </section>
-    <section class='mainBody'>
-        <section class='post'>
-            <section class='userName'>User1</section>
-            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</section>
-            <section class='saltLevel'>Salt Level: </section>
-        </section>
-        <section class='post'>
-            <section class='userName'>User2</section>
-            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</section>
-            <section class='saltLevel'>Salt Level: </section>
-        </section>
-        <section class='post'>
-            <section class='userName'>User3</section>
-            <section class='userPost'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</section>
-            <section class='saltLevel'>Salt Level: </section>
-        </section>
+
+    <section class="block-two">
+      <div class="hero">
+        <img src="img/data.png" alt="hacker news homepage screenshot">
+      </div>
+      <div class="block-column">
+        <p>
+          <h3>Troll Findr uses Natural Language Processing (NLP) to determine post sentiment and trolling likelyhood.</h3>
+        </p>
+        <div class="cta">
+          <a href="https://front-end-2-pied.now.sh/" class="cta-alt">
+            <button class="cta-btn" type="button">Learn More</button>
+          </a>
+          <!-- <a href="https://google.com" class="cta-prime">
+            <button class="cta-btn" type="button">Sign Up</button>
+          </a> -->
+        </div>
+      </div>
     </section>
-</section>
 
 
 
-  <iframe src="_footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <!-- <section class="landing-block-2">
+      <p>
+        Hacker News is a popular tech forum run by startup incubator Y Combinator. Like in most online communities, Hacker
+        News has its share of trolls. Our app will automatically rank comments based on sentiment and help you determine
+        if a
+        user is honest or a trolling.
+      </p>
+      <p>
+        Our ML model uses historical data going back 3 years.
+      </p>
+    </section>
+
+    <section class="list-join">
+
+      <form name="list-join" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <button type="submit">Join</button>
+        </p>
+      
+
+    </section>
+ -->
+
+
+  </div>
+<!-- end container div -->
+
+<!-- footer component -->
+  <iframe src="_footer.html"
+    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+  </iframe>
+<!-- footer component end -->
 </body>
 
 </html>
-
