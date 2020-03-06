@@ -638,26 +638,39 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-.landing-block-1 {
+.home .block-one {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid purple;
+  margin-bottom: 25px;
 }
-.landing-block-1 * {
-  border: 1px solid green;
-}
-.landing-block-1 .block-column {
+.home .block-one .block-column {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid purple;
 }
-.landing-block-1 .hero {
+.home .block-one .hero {
+  width: 50%;
   margin: 0 0 0 48px;
+}
+.home .block-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .block-two .block-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .block-two .hero {
+  width: 50%;
 }
 .about {
   flex-direction: column;
