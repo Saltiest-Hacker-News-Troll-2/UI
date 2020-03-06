@@ -538,6 +538,12 @@ a {
   align-items: center;
   padding: 0 8px;
 }
+@media (max-width:500px) {
+  .header .logo {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header .logo a {
   display: flex;
   flex-direction: row;
