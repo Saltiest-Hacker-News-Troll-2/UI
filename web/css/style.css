@@ -669,9 +669,14 @@ footer .copyright {
 }
 .team h1 {
   font-size: 3.5rem;
-  margin-left: 8.5%;
+  text-align: center;
   margin-top: 2%;
   margin-bottom: 2.5%;
+}
+@media (max-width:500px) {
+  .team h1 {
+    margin: 0 auto;
+  }
 }
 .firstRow {
   display: flex;
