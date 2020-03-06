@@ -652,6 +652,7 @@ footer .copyright {
   border: 1px solid purple;
 }
 .landing-block-1 .hero {
+  width: 50%;
   margin: 0 0 0 48px;
 }
 .team h1 {
