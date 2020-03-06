@@ -570,6 +570,11 @@ a {
   align-content: center;
   width: 45%;
 }
+@media (max-width:500px) {
+  .header nav {
+    width: 100%;
+  }
+}
 .header nav a {
   display: flex;
   flex-direction: row;
