@@ -587,14 +587,12 @@ footer {
   background-color: #F2F2F2;
   margin-top: 24px;
   padding: 24px 32px;
-  border: 1px solid red;
 }
 footer .links {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid yellow;
 }
 footer .links nav {
   display: flex;
@@ -603,12 +601,10 @@ footer .links nav {
   align-items: center;
   width: 50%;
   margin-bottom: 16px;
-  border: 1px solid blue;
 }
 footer .links nav a {
   font-size: 1.4rem;
   padding: 5px 0;
-  border: 1px solid orange;
 }
 footer .links nav a:hover {
   text-decoration: underline;
@@ -620,7 +616,6 @@ footer .links .social {
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
-  border: 1px solid green;
 }
 footer .links .social img {
   width: 24px;
@@ -631,7 +626,6 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
 }
 .landing-block-1 {
   display: flex;
