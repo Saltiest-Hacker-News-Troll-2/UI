@@ -3,7 +3,10 @@
   background-color: @ecstasy;
   box-shadow: 0px 4px 4px @black10;
   margin-bottom: @header-bottom-margin;
-
+  @media @phone{
+    display:flex;
+    flex-direction: column;
+  }
 //  border: 1px black solid;
 
   .logo {
@@ -48,7 +51,9 @@
 
     width: 45%;
     // border: 1px black solid;
-
+    @media @phone{
+      width:100%;
+    }
     a {
       .flex-row(center, center);
       height: @header-height;

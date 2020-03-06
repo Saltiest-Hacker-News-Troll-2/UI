@@ -13,7 +13,7 @@
 
 <body>
     <iframe src="_header.html"
-    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
     </iframe>
     <section class='container team'>
         <h1>OUR TEAM</h1>
@@ -70,5 +70,11 @@
             </div>
         </section>
     </section>
+    <!-- footer component -->
+    <iframe src="_footer.html"
+        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+    </iframe>
+    <!-- footer component end -->
 </body>
+
 </html>
