@@ -3,17 +3,17 @@
   background-color: @ecstasy;
   box-shadow: 0px 4px 4px @black10;
   margin-bottom: @header-bottom-margin;
-
+  @media @phone{
+    display:flex;
+    flex-direction: column;
+  }
 //  border: 1px black solid;
 
   .logo {
     .flex-row(left, center);
     // width: 40%;
     padding: 0 @logo-left-padding;
-    @media @phone{
-      display:flex;
-      flex-direction: column;
-    }
+
     // border: 1px red solid;
 
     a {
