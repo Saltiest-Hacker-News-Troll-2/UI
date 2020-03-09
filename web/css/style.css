@@ -663,6 +663,7 @@ footer .copyright {
   width: 120px;
   height: 32px;
   border-radius: 5px;
+  border: 0 solid #FA7921;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -828,10 +829,23 @@ footer .copyright {
 .contact * {
   border: 1px solid green;
 }
+.contact .btn {
+  width: 120px;
+  height: 32px;
+  border-radius: 5px;
+  border: 0 solid #FA7921;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .contact .title {
   margin-bottom: 48px;
 }
-.contact .action-btn {
+.contact .primary-btn {
+  color: #FFFFFF;
+  background-color: ecstasy;
+  border: 2px solid #FA7921;
+}
+.contact .secondary-btn {
   color: #FA7921;
   background-color: white;
   border: 2px solid #FA7921;
